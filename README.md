@@ -1,4 +1,3 @@
-<img width="1280" height="853" alt="image" src="https://github.com/user-attachments/assets/960384be-f272-488e-bdd9-cb678987ebe8" /># Virtual-study-group-bot
 The system enables users to register study sessions through Amazon Lex, saves the session information in DynamoDB, and automatically sends email reminders via SES fifteen minutes prior to the session using Lambda functions triggered by CloudWatch Events.
 
 # AWS Virtual Study Group Bot 🎓🤖
@@ -12,12 +11,14 @@ It allows users to register study sessions via **Amazon Lex**, stores details in
 
 ```mermaid
 flowchart TD
-    U[User] --> LEX[Amazon Lex Bot]
-    LEX --> L1[Lambda (Logic Handler)]
-    L1 --> DDB[(DynamoDB - Store Session)]
-    L1 --> CWE[CloudWatch Events - Schedule]
-    CWE --> L2[Lambda (Email Sender)]
-    L2 --> SES[Amazon SES - Send Email]
+   flowchart TD
+    U[User] --> LEX[Amazon_Lex_Bot]
+    LEX --> L1[Lambda_Logic_Handler]
+    L1 --> DDB[(DynamoDB_Store_Session)]
+    L1 --> CWE[CloudWatch_Events_Schedule]
+    CWE --> L2[Lambda_Email_Sender]
+    L2 --> SES[Amazon_SES_Send_Email]
+
 ````
 ![Virtual Study Group Bot Architecture](generated-image.png)
 
