@@ -11,7 +11,6 @@ It allows users to register study sessions via **Amazon Lex**, stores details in
 
 ```mermaid
 flowchart TD
-   flowchart TD
     U[User] --> LEX[Amazon_Lex_Bot]
     LEX --> L1[Lambda_Logic_Handler]
     L1 --> DDB[(DynamoDB_Store_Session)]
