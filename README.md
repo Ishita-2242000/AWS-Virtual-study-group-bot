@@ -19,7 +19,6 @@ flowchart TD
     L2 --> SES[Amazon_SES_Send_Email]
 
 ````
-![Virtual Study Group Bot Architecture](generated-image.png)
 
 ---
 
